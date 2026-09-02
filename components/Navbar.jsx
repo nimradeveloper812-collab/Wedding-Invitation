@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import { Menu, X, Heart, Music2, Volume2, VolumeX } from 'lucide-react';
 import { weddingData } from '@/data/weddingData';
 
-export default function Navbar() {
+export default function Navbar({ onOpenQR }) {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [isPlayingMusic, setIsPlayingMusic] = useState(false);
@@ -23,6 +23,7 @@ export default function Navbar() {
     { label: 'Travel & Stay', href: '#accommodations' },
     { label: 'Registry', href: '#registry' },
     { label: 'Gallery', href: '#gallery' },
+    { label: 'Wishes', href: '#guestbook' },
     { label: 'FAQs', href: '#faqs' },
   ];
 
@@ -87,8 +88,22 @@ export default function Navbar() {
             ))}
           </nav>
 
-          {/* Right Action: RSVP Call to action & audio toggle */}
-          <div className="hidden md:flex items-center space-x-4">
+          {/* Right Action: RSVP Call to action & QR code */}
+          <div className="hidden md:flex items-center space-x-3">
+            {onOpenQR && (
+              <button
+                type="button"
+                onClick={onOpenQR}
+                title="Scan QR Code on Phone"
+                className={`px-3 py-2 rounded-full text-xs uppercase tracking-wider font-semibold transition-all duration-300 border flex items-center space-x-1.5 ${
+                  isScrolled
+                    ? 'border-cream-300 text-charcoal-700 hover:bg-cream-100'
+                    : 'border-white/30 text-white hover:bg-white/10'
+                }`}
+              >
+                <span>📱 Scan QR</span>
+              </button>
+            )}
             <a
               href="#rsvp"
               onClick={(e) => scrollToSection(e, '#rsvp')}
