@@ -47,14 +47,14 @@ export default function CountdownTimer({ targetDate }) {
 
   if (!mounted) {
     return (
-      <div className="flex items-center justify-center gap-2 sm:gap-4 py-2">
+      <div className="flex items-center justify-center gap-1.5 sm:gap-3 py-1">
         {['Days', 'Hours', 'Mins', 'Secs'].map((label) => (
           <div
             key={label}
-            className="w-16 sm:w-20 md:w-24 h-18 sm:h-24 rounded-2xl bg-white/10 backdrop-blur-md border border-white/20 flex flex-col items-center justify-center"
+            className="w-14 sm:w-20 md:w-24 h-16 sm:h-24 rounded-2xl bg-white/10 backdrop-blur-md border border-gold-400/40 flex flex-col items-center justify-center"
           >
-            <span className="text-xl sm:text-3xl font-serif font-light text-white">--</span>
-            <span className="text-[9px] sm:text-xs uppercase tracking-wider text-white/70 mt-0.5">{label}</span>
+            <span className="text-lg sm:text-3xl font-serif font-light text-white">--</span>
+            <span className="text-[8px] sm:text-xs uppercase tracking-wider text-gold-200 mt-0.5">{label}</span>
           </div>
         ))}
       </div>
@@ -63,9 +63,9 @@ export default function CountdownTimer({ targetDate }) {
 
   if (timeLeft.isExpired) {
     return (
-      <div className="py-3 px-6 rounded-2xl bg-white/20 backdrop-blur-md border border-white/30 text-center animate-fade-in">
-        <p className="font-serif text-xl sm:text-2xl text-white font-medium">Today is the Day! 💍</p>
-        <p className="text-[10px] sm:text-xs uppercase tracking-widest text-cream-200 mt-0.5">Celebrating our love with you</p>
+      <div className="py-3 px-6 rounded-2xl bg-white/20 backdrop-blur-md border border-gold-300 text-center animate-fade-in max-w-sm mx-auto">
+        <p className="font-serif text-lg sm:text-2xl text-white font-medium">Today is the Royal Wedding! 💍</p>
+        <p className="text-[9px] sm:text-xs uppercase tracking-widest text-gold-200 mt-0.5">Mubarak to Ayesha & Hamza</p>
       </div>
     );
   }
@@ -78,19 +78,19 @@ export default function CountdownTimer({ targetDate }) {
   ];
 
   return (
-    <div className="flex items-center justify-center gap-2 sm:gap-3 md:gap-4 py-1">
+    <div className="flex items-center justify-center gap-1.5 sm:gap-3 md:gap-4 py-1">
       {units.map((unit) => (
         <div
           key={unit.label}
-          className="group relative flex flex-col items-center justify-center w-16 sm:w-20 md:w-24 h-[72px] sm:h-24 md:h-28 rounded-2xl bg-charcoal-950/45 backdrop-blur-md border border-white/25 shadow-lg transition-all duration-300 hover:border-champagne-300"
+          className="group relative flex flex-col items-center justify-center w-14 sm:w-20 md:w-24 h-16 sm:h-24 md:h-28 rounded-2xl bg-emerald-950/75 backdrop-blur-md border-2 border-gold-400/60 shadow-xl transition-all duration-300 hover:border-gold-300"
         >
-          {/* Subtle gold accent top bar */}
-          <div className="absolute top-0 left-1/4 right-1/4 h-[2px] bg-gradient-to-r from-transparent via-champagne-300 to-transparent opacity-80" />
+          {/* Gold top accent */}
+          <div className="absolute top-0 left-1/4 right-1/4 h-[2px] bg-gradient-to-r from-transparent via-gold-300 to-transparent" />
 
-          <span className="text-xl sm:text-3xl md:text-4xl font-serif font-light text-white tracking-tight drop-shadow-sm">
+          <span className="text-lg sm:text-3xl md:text-4xl font-serif font-light text-white tracking-tight drop-shadow-sm">
             {String(unit.value).padStart(2, '0')}
           </span>
-          <span className="text-[9px] sm:text-xs uppercase tracking-[0.15em] text-cream-200/90 font-medium mt-0.5">
+          <span className="text-[8px] sm:text-xs uppercase tracking-[0.15em] text-gold-200/90 font-semibold mt-0.5">
             {unit.label}
           </span>
         </div>

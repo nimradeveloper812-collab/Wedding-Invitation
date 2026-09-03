@@ -13,12 +13,13 @@ import Footer from '@/components/Footer';
 import EnvelopeIntro from '@/components/EnvelopeIntro';
 import FallingPetals from '@/components/FallingPetals';
 import QRCodeModal from '@/components/QRCodeModal';
+import MobileBottomNav from '@/components/MobileBottomNav';
 
 export default function WeddingPage() {
   const [isQRModalOpen, setIsQRModalOpen] = useState(false);
 
   return (
-    <main className="relative min-h-screen bg-pearl-100 text-charcoal-900">
+    <main className="relative min-h-screen bg-pearl-100 text-charcoal-900 pb-16 md:pb-0">
       {/* 3D Royal Wax Seal Envelope Intro Curtain */}
       <EnvelopeIntro />
 
@@ -37,7 +38,7 @@ export default function WeddingPage() {
       {/* Royal Bismillah Hero Header First Fold with Countdown */}
       <Hero />
 
-      {/* 4 Grand Celebrations (Mehndi, Nikkah, Barat, Walima) */}
+      {/* 4 Grand Celebrations (Mehndi, Nikkah, Barat, Walima with Mobile Tabs) */}
       <Schedule />
 
       {/* Interactive Desi RSVP Form with Dual-Cannon Confetti & Song Request */}
@@ -57,6 +58,9 @@ export default function WeddingPage() {
 
       {/* Royal Closing Footer with Islamic Blessing & Back-to-Top */}
       <Footer />
+
+      {/* Floating Glassmorphic Mobile Bottom Dock */}
+      <MobileBottomNav onOpenQR={() => setIsQRModalOpen(true)} />
     </main>
   );
 }
