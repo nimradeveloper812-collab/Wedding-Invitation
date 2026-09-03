@@ -4,18 +4,21 @@ An imperial, interactive, and romantic South Asian / Pakistani wedding invitatio
 
 Designed with a rich palette of **Royal Emerald Green**, **Imperial Maroon Velvet**, **24K Antique Gold Foil**, and **Arabic Bismillah Calligraphy**.
 
+Optimized for **100% Mobile Responsiveness & TikTok / Reels Screen Recording**.
+
 ---
 
 ## ✨ Features
 
 - ✉️ **Royal Wax Seal Envelope Reveal**: Vintage emerald & maroon velvet envelope with a 24K gold wax monogram seal (`A & H`). Tapping the seal breaks it with golden sparkles and smoothly reveals the royal invitation card with Arabic Bismillah calligraphy. Includes a *"Replay Card ✉️"* button for screen recording.
+- 📱 **Floating iOS-Style Mobile Bottom Dock**: Glassmorphic bottom navigation with quick shortcuts for Home, Events, RSVP Pill (`🤲`), Duas Wall, and QR Code.
 - 🕌 **Bismillah & Quranic Verse Hero Header**: Features `بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ` calligraphy, Surah Ar-Rum (30:21) on love & mercy, parental honor announcements for Mr. & Mrs. Tariq Mehmood and Mr. & Mrs. Shahid Malik, and live countdown timer to the wedding day.
-- 🗓️ **The 4 Grand Celebrations (Itinerary & Venues)**:
+- 🗓️ **The 4 Grand Celebrations (Interactive Tabs & Itinerary)**:
   - 💛 **Mayun & Mehndi Ki Raat** (`Nov 19` • *The Nishat Banquets*) — Marigold yellow festive theme, dholak beats, dance performances & live food stalls.
   - 🕌 **The Sacred Nikkah Ceremony** (`Nov 20` • *PC Hotel Lahore*) — Serene ivory & gold theme, Quranic recitation, and "Qubool Hai" vows.
   - ❤️ **The Royal Barat & Rukhsati** (`Nov 21` • *Royal Palm Crystal Ballroom*) — Imperial maroon velvet & gold, Sehra Bandi, Mughlai feast & Rukhsati.
   - 💚 **The Grand Walima Reception** (`Nov 22` • *Garrison Golf Club Marquee*) — Royal emerald green & champagne formal reception.
-  - *Each function includes venue address, maps link, and traditional dress code guidance.*
+  - *Includes interactive mobile tabs switchable between functions and venue directions.*
 - 📋 **Interactive Desi RSVP & Dance Request**:
   - Guest & Family name and guest count selector.
   - Function-wise attendance checkboxes (**Mehndi**, **Nikkah**, **Barat**, **Walima**).
