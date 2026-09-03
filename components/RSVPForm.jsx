@@ -94,11 +94,28 @@ export default function RSVPForm() {
 
   const triggerConfetti = () => {
     try {
+      // Cannon from left
       confetti({
-        particleCount: 90,
-        spread: 70,
-        origin: { y: 0.6 },
-        colors: ['#D4AF37', '#7E9A82', '#D9A7A0', '#FAF7F2'],
+        particleCount: 60,
+        angle: 60,
+        spread: 55,
+        origin: { x: 0, y: 0.65 },
+        colors: ['#D4AF37', '#76987E', '#DD9390', '#FAF7F2'],
+      });
+      // Cannon from right
+      confetti({
+        particleCount: 60,
+        angle: 120,
+        spread: 55,
+        origin: { x: 1, y: 0.65 },
+        colors: ['#D4AF37', '#76987E', '#DD9390', '#FAF7F2'],
+      });
+      // Center burst
+      confetti({
+        particleCount: 70,
+        spread: 80,
+        origin: { y: 0.55 },
+        colors: ['#D4AF37', '#C5A059', '#FAF7F2'],
       });
     } catch (e) {
       // Confetti fallback safe

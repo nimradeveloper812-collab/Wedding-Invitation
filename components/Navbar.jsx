@@ -167,10 +167,23 @@ export default function Navbar({ onOpenQR }) {
               </a>
             ))}
 
+            {onOpenQR && (
+              <button
+                type="button"
+                onClick={() => {
+                  setMobileMenuOpen(false);
+                  onOpenQR();
+                }}
+                className="w-full text-center py-2.5 rounded-full bg-cream-200 text-charcoal-800 font-semibold text-xs uppercase tracking-wider transition-colors flex items-center justify-center space-x-1.5"
+              >
+                <span>📱 Scan / Share QR Code</span>
+              </button>
+            )}
+
             <a
               href="#rsvp"
               onClick={(e) => scrollToSection(e, '#rsvp')}
-              className="w-full text-center py-3 mt-2 rounded-full bg-sage-700 text-white font-medium text-xs uppercase tracking-widest shadow-md hover:bg-sage-800"
+              className="w-full text-center py-3 mt-1 rounded-full bg-sage-700 text-white font-medium text-xs uppercase tracking-widest shadow-md hover:bg-sage-800 active:scale-95"
             >
               RSVP for Wedding
             </a>

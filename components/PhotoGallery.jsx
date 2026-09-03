@@ -88,13 +88,13 @@ export default function PhotoGallery() {
           </div>
         </div>
 
-        {/* Gallery Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
+        {/* Gallery Grid (2 columns on mobile, 4 on desktop) */}
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-6">
           {filteredPhotos.map((photo, index) => (
             <div
               key={photo.id}
               onClick={() => openLightbox(index)}
-              className="group relative cursor-pointer overflow-hidden rounded-3xl bg-charcoal-900 aspect-square shadow-sm hover:shadow-xl transition-all duration-500 hover:-translate-y-1"
+              className="group relative cursor-pointer overflow-hidden rounded-2xl sm:rounded-3xl bg-charcoal-900 aspect-square shadow-sm hover:shadow-xl transition-all duration-300 active:scale-95 hover:-translate-y-1"
             >
               <img
                 src={photo.src}
