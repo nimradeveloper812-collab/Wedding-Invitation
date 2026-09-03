@@ -3,32 +3,27 @@
 import { useState } from 'react';
 import Navbar from '@/components/Navbar';
 import Hero from '@/components/Hero';
-import OurStory from '@/components/OurStory';
 import Schedule from '@/components/Schedule';
+import OurStory from '@/components/OurStory';
 import RSVPForm from '@/components/RSVPForm';
-import RegistryAccommodations from '@/components/RegistryAccommodations';
 import PhotoGallery from '@/components/PhotoGallery';
 import Guestbook from '@/components/Guestbook';
 import FAQ from '@/components/FAQ';
 import Footer from '@/components/Footer';
 import EnvelopeIntro from '@/components/EnvelopeIntro';
 import FallingPetals from '@/components/FallingPetals';
-import AudioPlayer from '@/components/AudioPlayer';
 import QRCodeModal from '@/components/QRCodeModal';
 
 export default function WeddingPage() {
   const [isQRModalOpen, setIsQRModalOpen] = useState(false);
 
   return (
-    <main className="relative min-h-screen bg-cream-50 text-charcoal-800">
-      {/* 3D Wax Seal Envelope Intro Curtain & Replay Trigger */}
+    <main className="relative min-h-screen bg-pearl-100 text-charcoal-900">
+      {/* 3D Royal Wax Seal Envelope Intro Curtain */}
       <EnvelopeIntro />
 
-      {/* Floating Rose Petals & Golden Sparkles Animation */}
+      {/* Floating Rose Petals & Gold Sparkles */}
       <FallingPetals />
-
-      {/* Romantic Ambient Piano Music Player */}
-      <AudioPlayer />
 
       {/* Mobile QR Code Modal */}
       <QRCodeModal
@@ -39,31 +34,28 @@ export default function WeddingPage() {
       {/* Fixed Navigation Header with QR shortcut */}
       <Navbar onOpenQR={() => setIsQRModalOpen(true)} />
 
-      {/* Hero Header First Fold with Countdown */}
+      {/* Royal Bismillah Hero Header First Fold with Countdown */}
       <Hero />
 
-      {/* Our Story Milestone Timeline */}
-      <OurStory />
-
-      {/* Event Schedule & Location Details */}
+      {/* 4 Grand Celebrations (Mehndi, Nikkah, Barat, Walima) */}
       <Schedule />
 
-      {/* Interactive RSVP Form with Confetti Toast */}
+      {/* Interactive Desi RSVP Form with Dual-Cannon Confetti & Song Request */}
       <RSVPForm />
 
-      {/* Accommodations & Gift Registry */}
-      <RegistryAccommodations />
+      {/* Our Journey & Milestones */}
+      <OurStory />
 
-      {/* Photo Gallery with Lightbox */}
+      {/* Bridal & Traditional Photo Gallery with Lightbox */}
       <PhotoGallery />
 
-      {/* Love Notes & Wishes Guestbook Wall */}
+      {/* Duas & Well Wishes Wall (Guestbook) */}
       <Guestbook />
 
       {/* Frequently Asked Questions */}
       <FAQ />
 
-      {/* Romantic Footer & Back-to-Top */}
+      {/* Royal Closing Footer with Islamic Blessing & Back-to-Top */}
       <Footer />
     </main>
   );

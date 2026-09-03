@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -10,13 +12,17 @@
   }
 
   body {
-    color: #1F2937;
-    background-color: #FAF7F2;
+    color: #111827;
+    background-color: #FAF8F5;
     overflow-x: hidden;
   }
 
   ::selection {
-    background-color: #EADBB4;
-    color: #111827;
+    background-color: #D4AF37;
+    color: #062E22;
   }
+}
+
+.font-arabic {
+  font-family: 'Amiri', 'Traditional Arabic', serif;
 }
